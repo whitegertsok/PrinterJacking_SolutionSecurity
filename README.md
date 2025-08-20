@@ -19,7 +19,7 @@ PrinterGhost addresses a critical enterprise security gap: malicious printer imp
 sudo apt update && sudo apt install nmap
 
 # Clone the repository
-git clone https://github.com/yourusername/PrinterGhost.git
+git clone https://github.com/whitegertsok/PrinterGhost.git
 cd PrinterGhost
 ```
 **Basic Usage**
