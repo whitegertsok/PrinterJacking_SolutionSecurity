@@ -1,3 +1,4 @@
+PrinterGhost - Network Printer Security Auditor
 ### **🔥 What Problem Does This Solve?**
 PrinterGhost addresses a critical enterprise security gap: malicious printer impersonation attacks (PrintJacking). Most organizations overlook network printers as potential attack vectors, leaving them vulnerable to:
 
