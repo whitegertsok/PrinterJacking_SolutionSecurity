@@ -36,7 +36,7 @@ sudo ./PrinterSolutionSecurityEN.sh
 sudo NETWORK="10.0.0.0/24" ./PrinterSolutionSecurityEN.sh
 
 # Custom interface and log location
-sudo INTERFACE="eth1" LOG_DIR="/var/log/PrinterSolutionEN" ./PrinterSolutionSecurityEN.sh
+sudo INTERFACE="eth1" LOG_DIR="/var/log/YOUR_PLACE" ./PrinterSolutionSecurityEN.sh
 ```
 ### **📋 Comprehensive Guide**
 **Configuration Options**
