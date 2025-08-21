@@ -19,24 +19,24 @@ PrinterGhost addresses a critical enterprise security gap: malicious printer imp
 sudo apt update && sudo apt install nmap
 
 # Clone the repository
-git clone https://github.com/whitegertsok/PrinterGhost.git
-cd PrinterGhost
+git clone https://github.com/whitegertsok/PrinterJacking_SolutionSecurity.git
+cd PrinterJacking_SolutionSecurity
 ```
 **Basic Usage**
 ```
 # Make script executable
-chmod +x printer_audit.sh
+chmod +x PrinterSolutionEN.sh
 
 # Run with default settings
-sudo ./printer_audit.sh
+sudo ./PrinterSolutionEN.sh
 ```
 **Advanced Scanning**
 ```
 # Scan specific network
-sudo NETWORK="10.0.0.0/24" ./printer_audit.sh
+sudo NETWORK="10.0.0.0/24" ./PrinterSolutionEN.sh
 
 # Custom interface and log location
-sudo INTERFACE="eth1" LOG_DIR="/var/log/printer_audit" ./printer_audit.sh
+sudo INTERFACE="eth1" LOG_DIR="/var/log/PrinterSolutionEN" ./PrinterSolutionEN.sh
 ```
 ### **📋 Comprehensive Guide**
 **Configuration Options**
