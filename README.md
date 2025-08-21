@@ -52,4 +52,4 @@ PRINTER_BRANDS="HP|Canon|Xerox|Epson|Brother|Ricoh|Kyocera"
 # Blacklist (suspicious brands)
 BLACKLIST_BRANDS="Unknown|Generic|Fake"
 ```
-Let's try for your SOC system! :) **In code EN - English transcription / RU - Russian transcription!**
+Let's check and try for your company or SOC system! :) **In code EN - English transcription / RU - Russian transcription!**
