@@ -25,18 +25,18 @@ cd PrinterJacking_SolutionSecurity
 **Basic Usage**
 ```
 # Make script executable
-chmod +x PrinterSolutionEN.sh
+chmod +x PrinterSolutionSecurityEN.sh
 
 # Run with default settings
-sudo ./PrinterSolutionEN.sh
+sudo ./PrinterSolutionSecurityEN.sh
 ```
 **Advanced Scanning**
 ```
 # Scan specific network
-sudo NETWORK="10.0.0.0/24" ./PrinterSolutionEN.sh
+sudo NETWORK="10.0.0.0/24" ./PrinterSolutionSecurityEN.sh
 
 # Custom interface and log location
-sudo INTERFACE="eth1" LOG_DIR="/var/log/PrinterSolutionEN" ./PrinterSolutionEN.sh
+sudo INTERFACE="eth1" LOG_DIR="/var/log/PrinterSolutionEN" ./PrinterSolutionSecurityEN.sh
 ```
 ### **📋 Comprehensive Guide**
 **Configuration Options**
