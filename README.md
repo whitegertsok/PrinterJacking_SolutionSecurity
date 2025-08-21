@@ -52,4 +52,19 @@ PRINTER_BRANDS="HP|Canon|Xerox|Epson|Brother|Ricoh|Kyocera"
 # Blacklist (suspicious brands)
 BLACKLIST_BRANDS="Unknown|Generic|Fake"
 ```
+### **👣Multi-level check** 
+The script uses cascading analysis, which dramatically increases the accuracy of the detection:
+```
+Level 1 (Network): Detection of all active hosts.
+
+Level 2 (Ports): Filtering devices with open printer ports (9100/tcp, 515/tcp, 631/tcp).
+
+Level 3 (OS and Services): Deep scanning to determine the actual OS (-O) and software (-sV). This is a nuclear test: if Windows/Linux is running on port 9100, it is a 99% sign of an attack.
+
+Level 4 (Scripts): Use Nmap scripts (printer-info, ipp-enum) to collect additional evidence.
+
+Level 5 (PJL verification): Final verification by sending a PJL command. A real printer will respond, but a fake device will not or will respond with nonsense. This is definitive proof.
+```
+
 Let's check and try for your company or SOC system! :) **In code EN - English transcription / RU - Russian transcription!**
+
