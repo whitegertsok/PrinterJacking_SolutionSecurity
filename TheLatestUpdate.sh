@@ -178,7 +178,7 @@ if ! run_nmap_scan "$nmap_cmd" "Сканирование портов принт
     touch "${PRINT_HOSTS}.ips"
 else
     # Сохраняем IP адреса
-    grep "open" "$PRINT_HOSTS" 2>/dev/null | awk '{print $2}' > "${PRINT_HOSTS}.ips" 2>/dev/null || {
+   grep "open" "$PRINT_HOSTS" 2>/dev/null | grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' > "${PRINT_HOSTS}.ips" 2>/dev/null || {
         echo "⚠️  Ошибка при обработке результатов сканирования портов"
         touch "${PRINT_HOSTS}.ips"
     }
@@ -195,7 +195,7 @@ if [ -s "${PRINT_HOSTS}.ips" ]; then
     echo "   Сканируем $PRINT_COUNT устройств..."
     
     # Глубокое сканирование
-    nmap_cmd="nmap -O -sV -T4 --osscan-guess --max-retries 1 --host-timeout 2m --script=\"ipp-enum,printer-info,smb2-security-mode\" -iL \"${PRINT_HOSTS}.ips\" -oA \"$DETAILED_SCAN\""
+    nmap_cmd="nmap -O -sV -T4 --osscan-guess --max-retries 1 --host-timeout 2m --script=ipp-enum,printer-info,smb2-security-mode -iL \"${PRINT_HOSTS}.ips\" -oA \"$DETAILED_SCAN\"" 
     if ! run_nmap_scan "$nmap_cmd" "Глубокое сканирование" "${DETAILED_SCAN}.nmap" 2 30; then
         echo "⚠️  Не удалось выполнить глубокое сканирование. Продолжаем анализ доступных данных."
     fi
