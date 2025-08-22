@@ -1,5 +1,5 @@
 PrinterJacking_SolutionSecurity - Network Printer Security Auditor
-**( TheLatestUpdate.sh to use )** for IPV4 networks
+**( TheLatestUpdate.sh to use ) for IPV4 networks**
 ### **🔥 What Problem Does This Solve?**
 PrinterGhost addresses a critical enterprise security gap: malicious printer impersonation attacks (PrintJacking). Most organizations overlook network printers as potential attack vectors, leaving them vulnerable to:
 
